@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Tales | Contemporary Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mascot" id="artMascot">
+        <div class="mascot-body">
+            <div class="paintbrush">
+                <div class="brush-handle"></div>
+                <div class="brush-head"></div>
+            </div>
+            <div class="wings">
+                <div class="wing wing-left"></div>
+                <div class="wing wing-right"></div>
+            </div>
+            <div class="mascot-face">
+                <div class="eyes">
+                    <div class="eye eye-left"></div>
+                    <div class="eye eye-right"></div>
+                </div>
+                <div class="smile"></div>
+            </div>
+        </div>
+        <div class="paint-trail"></div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-main">D-TALES</div>
+                <div class="logo-subtitle">by Deeksha Dwivedi</div>
+            </div>
+            <div class="nav-links">
+                <a href="#featured">Featured</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About Us</a>
+                <div class="currency-selector">
+                    <select id="currency-select">
+                        <option value="INR">₹ INR</option>
+                        <option value="USD">$ USD</option>
+                        <option value="EUR">€ EUR</option>
+                        <option value="GBP">£ GBP</option>
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search artworks...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1482160549825-59d1b23cb208?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
+                <div class="carousel-content">
+                    <h1>Discover Original Art</h1>
+                    <p>Curated collection of exceptional artworks by Deeksha Dwivedi</p>
+                    <a href="#featured" class="cta-button">Explore Collection</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
+                <div class="carousel-content">
+                    <h1>Contemporary Masterpieces</h1>
+                    <p>Experience the beauty of modern artistic expression</p>
+                    <a href="#featured" class="cta-button">View Gallery</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1578926288207-a90a5366759d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
+                <div class="carousel-content">
+                    <h1>Artistic Excellence</h1>
+                    <p>Where imagination meets canvas</p>
+                    <a href="#featured" class="cta-button">Discover More</a>
+                </div>
+            </div>
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <button class="carousel-btn next-btn">&gt;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-section">
+        <div class="section-header">
+            <h2>Featured Artworks</h2>
+            <p>Carefully selected pieces from our finest collection</p>
+        </div>
+        <div class="gallery-container featured-container">
+            <!-- Featured artworks will be dynamically added here -->
+        </div>
+    </section>
+
+    <section class="category-banner">
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="https://source.unsplash.com/random/800x600/?painting" alt="Paintings">
+                <h3>Paintings</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/random/800x600/?sculpture" alt="Sculptures">
+                <h3>Sculptures</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/random/800x600/?photography" alt="Photography">
+                <h3>Photography</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals" class="gallery-section">
+        <div class="section-header">
+            <h2>New Arrivals</h2>
+            <p>Latest additions to our collection</p>
+        </div>
+        <div class="gallery-container">
+            <!-- Art items will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>About Us</h2>
+            <p>The Story Behind D-Tales</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to D-Tales, where art meets imagination. Founded by Deeksha Dwivedi, our gallery showcases a unique collection of contemporary artworks that tell stories through colors, textures, and emotions.</p>
+                <p>Each piece in our collection is carefully crafted to create an immersive experience, inviting viewers to explore the depths of artistic expression and creativity.</p>
+                <p>Our mission is to bring exceptional art to art lovers and collectors worldwide, while supporting and promoting the vision of our talented artist.</p>
+            </div>
+            <div class="artist-profile">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Deeksha Dwivedi">
+                <h3>Deeksha Dwivedi</h3>
+                <p>Contemporary Artist</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="art-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="art-details">
+                <div class="art-image">
+                    <img src="" alt="Artwork">
+                    <div class="artwork-badges">
+                        <span class="badge original">Original</span>
+                        <span class="badge authenticated">Authenticated</span>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <h2 class="art-title"></h2>
+                    <p class="artist-name"></p>
+                    <p class="art-description"></p>
+                    <div class="artwork-details">
+                        <div class="detail">
+                            <span class="label">Medium</span>
+                            <span class="value medium"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Size</span>
+                            <span class="value size"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Year</span>
+                            <span class="value year"></span>
+                        </div>
+                    </div>
+                    <p class="art-price"></p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <div class="artwork-guarantee">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Purchase with Confidence<br>
+                        <span>Certificate of Authenticity included</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-amount">$0</span></p>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Upload Artwork</h2>
+            <form id="upload-form" class="upload-form">
+                <div class="form-group">
+                    <label for="artwork-image">Artwork Image</label>
+                    <div class="image-upload-container">
+                        <input type="file" id="artwork-image" accept="image/*" required>
+                        <div class="image-preview"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="artwork-title">Title</label>
+                    <input type="text" id="artwork-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="artwork-description">Description</label>
+                    <textarea id="artwork-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="artwork-price">Price (INR)</label>
+                    <input type="number" id="artwork-price" min="0" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="artwork-medium">Medium</label>
+                        <input type="text" id="artwork-medium" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="artwork-size">Size</label>
+                        <input type="text" id="artwork-size" placeholder="e.g., 24\" x 36\"" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="artwork-year">Year</label>
+                        <input type="number" id="artwork-year" min="1900" max="2024" required>
+                    </div>
+                    <div class="form-group half">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="artwork-featured">
+                            Feature this artwork
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Upload Artwork</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="admin-login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="admin-login-form" class="admin-form">
+                <div class="form-group">
+                    <label for="admin-username">Username</label>
+                    <input type="text" id="admin-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-header">
+            <h2>Admin Panel</h2>
+            <button id="admin-logout" class="logout-btn">Logout</button>
+        </div>
+        <div class="admin-content">
+            <button class="upload-btn">Upload New Artwork</button>
+            <div class="artwork-list">
+                <!-- Artwork list will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Curating exceptional artworks from renowned artists worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@artistry.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 D-TALES. All rights reserved.</p>
+            <a href="#" id="admin-login-link" class="footer-admin-link">Admin Login</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
